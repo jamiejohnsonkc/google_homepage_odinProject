@@ -6,20 +6,22 @@ svg:not(:root) {
     overflow: hidden;
 }
 
-html, body {
-height: 100%;
-width: 100%;
-padding: 0;
-margin: 0;
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-body{
+body {
     font-size: 14px;
 }
 
-body, a {
+body,
+a {
     font-family: Arial, HelveticaNeue, sans-serif;
-} 
+}
 
 header {
     display: flex;
@@ -29,11 +31,11 @@ header {
 }
 
 footer {
-  line-height: 33px; 
+    line-height: 33px;
 }
 
-#footerBar{
-    background: #f2f2f2; 
+#footerBar {
+    background: #f2f2f2;
     border-top: 1px solid #dadce0;
     line-height: 15px;
     margin: 0;
@@ -44,7 +46,7 @@ footer {
     width: 100%;
 }
 
-.unknownBullet{
+.unknownBullet {
     border-radius: 100%;
     display: inline-block;
     height: 10px;
@@ -54,84 +56,82 @@ footer {
     background: #70757a;
 }
 
-
-#unknownStrong{
+#unknownStrong {
     color: #3c4043;
     font-weight: bold;
 }
 
-#unknownMessage{
+#unknownMessage {
     color: #70757a;
 }
-#unknownStrong, #unknownMessage{
+#unknownStrong,
+#unknownMessage {
     font-size: 13px;
 }
 
-.smallNav{
+.smallNav {
     width: 100%;
     display: flex;
     height: 48px;
 }
 
-.largeNav{
+.largeNav {
     width: 100%;
     display: none;
-    height: 48px; 
+    height: 48px;
 }
 
-.headerLinkContainer{
-display: flex;
-/* flex: 0 0 auto; */
+.headerLinkContainer {
+    display: flex;
+    /* flex: 0 0 auto; */
 }
 
-#headerSpacer{
- display: flex;
- flex: 1 0 auto;   
+#headerSpacer {
+    display: flex;
+    flex: 1 0 auto;
 }
 
-#headerRight{
-   flex: 0 0 auto;
-   position: relative;
-   z-index: 1;
-   display: block;
-   height: 48px;
+#headerRight {
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 48px;
 }
 
-#headerRightContainer{
+#headerRightContainer {
     float: right;
     position: relative;
     display: block;
     white-space: nowrap;
 }
 
-#navbar{
-display: none;
-position: absolute;
+#navbar {
+    display: none;
+    position: absolute;
 }
 
-.largeNav a.headerLink{
+.largeNav a.headerLink {
     text-transform: capitalize;
-color: #222;
-font-size: 14px;
-
+    color: #222;
+    font-size: 14px;
 }
 
-.largeNav a.headerLink{
-    padding:  0 5px;
+.largeNav a.headerLink {
+    padding: 0 5px;
 }
 
 .largeNav a.headerLink:first-of-type {
     margin-left: 15px;
-  
 }
 
-.smallNav a.headerLink{
+.smallNav a.headerLink {
     text-transform: uppercase;
     font-weight: 600;
     padding: 0 8px;
 }
 
-a.headerLink{
+a.headerLink {
     display: block;
     flex: 0 0 auto;
     font-size: 12px;
@@ -141,32 +141,33 @@ a.headerLink{
     cursor: pointer;
 }
 
-a.headerLink:active, #mockActive{
+a.headerLink:active,
+#mockActive {
     color: #4285f4;
-    border-bottom: 2px solid #4285f4; 
+    border-bottom: 2px solid #4285f4;
 }
 
-#hamburger{
+#hamburger {
     display: block;
     padding: 12px 16px;
 }
 
-#nineContainer{
+#nineContainer {
     display: inline;
 }
 
-#nineWrapper{
+#nineWrapper {
     padding: 4px;
     display: inline-block;
     vertical-align: middle;
 }
 
-#nineSvgContainer{
+#nineSvgContainer {
     position: relative;
     display: block;
     line-height: normal;
 }
-#nine{
+#nine {
     display: inline-block;
     outline: none;
     vertical-align: middle;
@@ -179,9 +180,7 @@ a.headerLink:active, #mockActive{
     cursor: pointer;
 }
 
-
-
-.nineDots{
+.nineDots {
     display: block;
     margin: auto;
     height: 100%;
@@ -193,9 +192,9 @@ a.headerLink:active, #mockActive{
     border-radius: 4px;
     color: white;
     display: inline-block;
-    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
     line-height: 16px;
     margin-left: 8px;
     margin-right: 8px;
@@ -203,10 +202,10 @@ a.headerLink:active, #mockActive{
     vertical-align: middle;
 }
 
-#gb-main{
-display: flex;
-flex-direction: column;
-min-height: 100%;
+#gb-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 #outer {
@@ -214,7 +213,7 @@ min-height: 100%;
     text-align: center;
 }
 
-#logoWrapper{
+#logoWrapper {
     display: block;
     text-align: center;
     margin: 48px auto 18px;
@@ -223,9 +222,9 @@ min-height: 100%;
 }
 
 #googleLogo {
- width: 160px;
- height: 56px;
- margin: 36px auto 18px;
+    width: 160px;
+    height: 56px;
+    margin: 36px auto 18px;
 }
 
 #searchForm {
@@ -234,54 +233,56 @@ min-height: 100%;
     margin: 12px;
 }
 
-#searchFormContainer{
-border: 1px solid #dadce0;
-border-radius: 20px;
-display: grid;
-width: 100%;
-grid-template-columns: 10% auto;
+#searchFormContainer {
+    border: 1px solid #dadce0;
+    border-radius: 20px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% auto;
 }
 
-#searchButton, #searchInputContainer, #searchInput{
+#searchButton,
+#searchInputContainer,
+#searchInput {
     display: inline-grid;
     border-radius: 20px;
     background: none;
     border: none;
 }
 
-#searchInput{
-padding: 7px 0 6px;
-line-height: 24px;
+#searchInput {
+    padding: 7px 0 6px;
+    line-height: 24px;
 }
 
-#searchInput:focus { 
+#searchInput:focus {
     outline: none;
     border: none;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 #searchInputContainer {
     width: auto;
 }
 
-#searchButton{
+#searchButton {
     width: 24px;
     height: 24px;
     margin: auto;
     padding: 0;
 }
 
-#magGlass{
+#magGlass {
     height: 24px;
     line-height: 24px;
     width: 24px;
 }
 
-#magGlassSvg{
+#magGlassSvg {
     fill: var(--lightGray);
 }
 
-#buttons{
+#buttons {
     display: none;
 }
 
@@ -294,18 +295,18 @@ line-height: 24px;
 }
 a.iconLink {
     color: #555;
-    font-size: .5rem;
+    font-size: 0.5rem;
     text-align: center;
     display: grid;
     cursor: pointer;
 }
-.iconLink img{
+.iconLink img {
     width: 24px;
     display: block;
     justify-self: center;
 }
 
-#footerLinkContainer{
+#footerLinkContainer {
     display: none;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1;
@@ -316,39 +317,38 @@ a.iconLink {
     margin: 0 auto;
 }
 
-.footerLinksGroup{
-display: inline-flex;
-justify-content: center;
+.footerLinksGroup {
+    display: inline-flex;
+    justify-content: center;
 }
 
-.footerLink{
-color: #70757a;
-font-size: 14px;
-padding: 15px;
-justify-self: center;
-text-decoration: none;
+.footerLink {
+    color: #70757a;
+    font-size: 14px;
+    padding: 15px;
+    justify-self: center;
+    text-decoration: none;
 }
 
-#carbonLeaf{
+#carbonLeaf {
     height: 14px;
     width: 14px;
     margin-right: 6px;
-    
 }
 
-@media all and (min-width: 1024px) and (max-width: 1280px) { 
-    .smallNav{
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .smallNav {
         display: none;
     }
-    .largeNav{
+    .largeNav {
         display: flex;
     }
 
-    #outer{
-display: flex;
-flex-direction: column;
+    #outer {
+        display: flex;
+        flex-direction: column;
     }
-    #logoWrapper{
+    #logoWrapper {
         display: flex;
         flex-direction: column;
         flex: 1;
@@ -362,13 +362,13 @@ flex-direction: column;
         width: 100%;
     }
 
-    #logoContainer{
+    #logoContainer {
         max-height: 92px;
         height: 100%;
         margin-top: auto;
         display: block;
     }
-    #googleLogo{
+    #googleLogo {
         /* max-height: 100%;
         max-width: 100%;
         object-fit: contain;
@@ -378,75 +378,76 @@ flex-direction: column;
         /* aspect-ratio: auto 272 / 92; */
         width: 272px;
     }
-    #searchForm{
+    #searchForm {
         width: auto;
-    max-width: 584px;
-    margin: 24px auto;
+        max-width: 584px;
+        margin: 24px auto;
     }
-    
-#buttons{
-    display: flex;
-    justify-content: center;
-}
 
-.gButton{
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    border-radius: 4px;
-    color: #3c4043;
-    font-family: arial,sans-serif;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 0 16px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-    text-align: center;
-    cursor: pointer;
-}
+    #buttons {
+        display: flex;
+        justify-content: center;
+    }
 
-#footerBar{
-    background: #f2f2f2; 
-    border-top: none;
-    /* line-height: 15px; */
-    /* margin: 0; */
-    /* min-height: 15px; */
-    /* min-height: auto; */
-    padding: 0;
-    /* text-align: center; */
-    /* width: 100%; */
-}
+    .gButton {
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+    }
 
-    #footerLinkContainer{
+    #footerBar {
+        background: #f2f2f2;
+        border-top: none;
+        /* line-height: 15px; */
+        /* margin: 0; */
+        /* min-height: 15px; */
+        /* min-height: auto; */
+        padding: 0;
+        /* text-align: center; */
+        /* width: 100%; */
+    }
+
+    #footerLinkContainer {
         display: grid;
     }
-    #footerGPSError{
+    #footerGPSError {
         display: none;
     }
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
 
-
-@media all and (min-width: 768px) and (max-width: 1024px) { }
-
-@media all and (min-width: 480px) and (max-width: 768px) { 
-    #iconLinkGrid{
+@media all and (min-width: 480px) and (max-width: 768px) {
+    #iconLinkGrid {
         display: none;
     }
 }
 
-@media all and (max-width: 480px) { 
-    #iconLinkGrid{
+@media all and (max-width: 480px) {
+    #iconLinkGrid {
         display: inline-grid;
     }
 }
 
-
 /* Portrait */
-@media screen and (orientation:portrait) { /* Portrait styles here */ }
+@media screen and (orientation: portrait) {
+    /* Portrait styles here */
+}
 /* Landscape */
-@media screen and (orientation:landscape) { /* Landscape styles here */ }
-
+@media screen and (orientation: landscape) {
+    /* Landscape styles here */
+}
 
 /* CSS for iPhone, iPad, and Retina Displays */
 
@@ -456,22 +457,22 @@ flex-direction: column;
 
 /* Retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 /* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation:portrait) {
-} 
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}
 
 /* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation:landscape) {
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
 }
 
 /* iPad Portrait */
-@media screen and (min-device-width: 481px) and (orientation:portrait) {
-    #logoWrapper{
+@media screen and (min-device-width: 481px) and (orientation: portrait) {
+    #logoWrapper {
         margin: 142px auto 23px;
         width: 272px;
     }
@@ -479,10 +480,9 @@ only screen and (min-device-pixel-ratio: 1.5) {
     #googleLogo {
         width: 272px;
         height: 92px;
-       }
+    }
 }
 
 /* iPad Landscape */
-@media screen and (min-device-width: 481px) and (orientation:landscape) {
+@media screen and (min-device-width: 481px) and (orientation: landscape) {
 }
-

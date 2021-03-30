@@ -1,0 +1,488 @@
+:root {
+    --lightGray: #9aa0a6;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+html, body {
+height: 100%;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+
+body{
+    font-size: 14px;
+}
+
+body, a {
+    font-family: Arial, HelveticaNeue, sans-serif;
+} 
+
+header {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    color: #70757a;
+}
+
+footer {
+  line-height: 33px; 
+}
+
+#footerBar{
+    background: #f2f2f2; 
+    border-top: 1px solid #dadce0;
+    line-height: 15px;
+    margin: 0;
+    min-height: 15px;
+    min-height: auto;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.unknownBullet{
+    border-radius: 100%;
+    display: inline-block;
+    height: 10px;
+    margin: 6px 4px 9px 0;
+    vertical-align: middle;
+    width: 10px;
+    background: #70757a;
+}
+
+
+#unknownStrong{
+    color: #3c4043;
+    font-weight: bold;
+}
+
+#unknownMessage{
+    color: #70757a;
+}
+#unknownStrong, #unknownMessage{
+    font-size: 13px;
+}
+
+.smallNav{
+    width: 100%;
+    display: flex;
+    height: 48px;
+}
+
+.largeNav{
+    width: 100%;
+    display: none;
+    height: 48px; 
+}
+
+.headerLinkContainer{
+display: flex;
+/* flex: 0 0 auto; */
+}
+
+#headerSpacer{
+ display: flex;
+ flex: 1 0 auto;   
+}
+
+#headerRight{
+   flex: 0 0 auto;
+   position: relative;
+   z-index: 1;
+   display: block;
+   height: 48px;
+}
+
+#headerRightContainer{
+    float: right;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+#navbar{
+display: none;
+position: absolute;
+}
+
+.largeNav a.headerLink{
+    text-transform: capitalize;
+color: #222;
+font-size: 14px;
+
+}
+
+.largeNav a.headerLink{
+    padding:  0 5px;
+}
+
+.largeNav a.headerLink:first-of-type {
+    margin-left: 15px;
+  
+}
+
+.smallNav a.headerLink{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 8px;
+}
+
+a.headerLink{
+    display: block;
+    flex: 0 0 auto;
+    font-size: 12px;
+    line-height: 48px;
+    text-align: center;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+a.headerLink:active, #mockActive{
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4; 
+}
+
+#hamburger{
+    display: block;
+    padding: 12px 16px;
+}
+
+#nineContainer{
+    display: inline;
+}
+
+#nineWrapper{
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#nineSvgContainer{
+    position: relative;
+    display: block;
+    line-height: normal;
+}
+#nine{
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    box-sizing: border-box;
+    background-position: -64px -29px;
+    cursor: pointer;
+}
+
+
+
+.nineDots{
+    display: block;
+    margin: auto;
+    height: 100%;
+}
+
+#signIn {
+    /* min-width: 80px; */
+    background-color: #1a73e8;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    letter-spacing: .25px;
+    line-height: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 9px 15px;
+    vertical-align: middle;
+}
+
+#gb-main{
+display: flex;
+flex-direction: column;
+min-height: 100%;
+}
+
+#outer {
+    flex: 1;
+    text-align: center;
+}
+
+#logoWrapper{
+    display: block;
+    text-align: center;
+    margin: 48px auto 18px;
+    width: 160px;
+    line-height: 0;
+}
+
+#googleLogo {
+ width: 160px;
+ height: 56px;
+ margin: 36px auto 18px;
+}
+
+#searchForm {
+    display: block;
+    /* width: 96%; */
+    margin: 12px;
+}
+
+#searchFormContainer{
+border: 1px solid #dadce0;
+border-radius: 20px;
+display: grid;
+width: 100%;
+grid-template-columns: 10% auto;
+}
+
+#searchButton, #searchInputContainer, #searchInput{
+    display: inline-grid;
+    border-radius: 20px;
+    background: none;
+    border: none;
+}
+
+#searchInput{
+padding: 7px 0 6px;
+line-height: 24px;
+}
+
+#searchInput:focus { 
+    outline: none;
+    border: none;
+    background-color: transparent; 
+}
+
+#searchInputContainer {
+    width: auto;
+}
+
+#searchButton{
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    padding: 0;
+}
+
+#magGlass{
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+}
+
+#magGlassSvg{
+    fill: var(--lightGray);
+}
+
+#buttons{
+    display: none;
+}
+
+#iconLinkGrid {
+    display: none;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px auto;
+    width: 90%;
+    margin: 12px auto;
+}
+a.iconLink {
+    color: #555;
+    font-size: .5rem;
+    text-align: center;
+    display: grid;
+    cursor: pointer;
+}
+.iconLink img{
+    width: 24px;
+    display: block;
+    justify-self: center;
+}
+
+#footerLinkContainer{
+    display: none;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footerLinksGroup{
+display: inline-flex;
+justify-content: center;
+}
+
+.footerLink{
+color: #70757a;
+font-size: 14px;
+padding: 15px;
+justify-self: center;
+text-decoration: none;
+}
+
+#carbonLeaf{
+    height: 14px;
+    width: 14px;
+    margin-right: 6px;
+    
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    .smallNav{
+        display: none;
+    }
+    .largeNav{
+        display: flex;
+    }
+
+    #outer{
+display: flex;
+flex-direction: column;
+    }
+    #logoWrapper{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        /* min-height: 92px; */
+        min-height: 150px;
+        max-height: 290px;
+        height: calc(100% - 560px);
+        /* flex-shrink: 0; */
+        /* box-sizing: border-box; */
+        width: 100%;
+    }
+
+    #logoContainer{
+        max-height: 92px;
+        height: 100%;
+        margin-top: auto;
+        display: block;
+    }
+    #googleLogo{
+        /* max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: center bottom;
+        width: auto; */
+        height: 92px;
+        /* aspect-ratio: auto 272 / 92; */
+        width: 272px;
+    }
+    #searchForm{
+        width: auto;
+    max-width: 584px;
+    margin: 24px auto;
+    }
+    
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.gButton{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#footerBar{
+    background: #f2f2f2; 
+    border-top: none;
+    /* line-height: 15px; */
+    /* margin: 0; */
+    /* min-height: 15px; */
+    /* min-height: auto; */
+    padding: 0;
+    /* text-align: center; */
+    /* width: 100%; */
+}
+
+    #footerLinkContainer{
+        display: grid;
+    }
+    #footerGPSError{
+        display: none;
+    }
+}
+
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+    #iconLinkGrid{
+        display: none;
+    }
+}
+
+@media all and (max-width: 480px) { 
+    #iconLinkGrid{
+        display: inline-grid;
+    }
+}
+
+
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+} 
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+    #logoWrapper{
+        margin: 142px auto 23px;
+        width: 272px;
+    }
+
+    #googleLogo {
+        width: 272px;
+        height: 92px;
+       }
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}
+

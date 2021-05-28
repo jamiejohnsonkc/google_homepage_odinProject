@@ -1,4 +1,3 @@
-# Google-Hompage-odinProject
+# The Odin Project: Google Hompage Rebuild
 
-Google hompage rebuild practice from theodinproject.com
 
